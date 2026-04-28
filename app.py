@@ -7,4 +7,4 @@ app = FastAPI()
 def read_root():
     hostname = socket.gethostname()
     # Version 1.0 (Blue Environment)
-    return {"version": "Blue (v1.0)", "pod": hostname}
+    return {"version": "Blue (v1.1)", "pod": hostname}
