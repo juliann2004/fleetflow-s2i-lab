@@ -1,7 +1,5 @@
 fastapi
-HEAD
+
 uvicorn[standard]
-uvicorn[standard]
-pytest
-httpx
-c7d4b49 (Initialize CI/CD Pipeline)
+
+
