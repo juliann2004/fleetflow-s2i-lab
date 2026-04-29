@@ -48,4 +48,4 @@ jobs:
         oc login --token=$TOKEN --server=$SERVER --insecure-skip-tls-verify
 
         # Create a new app using S2I (if it doesn't exist) or start a build
-        oc new-app python:3.11~. --name=fleetflow-cicd || oc start-build fleetflow-cicd --from-dir=. --follow
+        oc new-app python:3.11~https://github.com/juliann2004/fleetflow-s2i-lab.git --name=fleetflow-cicd --strategy=source
